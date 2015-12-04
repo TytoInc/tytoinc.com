@@ -15,7 +15,8 @@ h1 {
 p {
   font-family: "Open Sans", sans-serif;
   padding: 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -33,7 +34,8 @@ a {
 .wrapper {
   width: 100%;
   background-color: #f1f1f1;
-  min-height: 100%; }
+  min-height: 100%;
+  margin-bottom: -59px; }
 
 .banner {
   width: 100%;
@@ -123,18 +125,65 @@ a {
 .heading {
   color: #FF7E26;
   margin-bottom: 40px;
-  font-family: "Open Sans", sans-serif;
-  font-style: italic; }
+  font-family: "Montserrat"; }
+
+.central {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #e5e5e5; }
+  .central .heading {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px; }
+  .central hr {
+    width: 400px;
+    max-width: 90%;
+    margin: 20px auto; }
+
+.subtext {
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.subbanner {
+  position: relative;
+  z-index: 1;
+  background-color: #FF7E26;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 2em; }
+  .subbanner p {
+    margin: 0; }
+
+.subheadingtext, .subheading {
+  width: 600px;
+  margin: 0 auto;
+  max-width: 100%; }
+
+.subheading {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 1.2em; }
 
 footer {
-  margin-top: 90px;
   padding: 20px;
   background-color: #454641;
-  font-family: "Open Sans", sans-serif;
-  text-align: center; }
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #fff; }
   footer a {
     color: #E05530; }
     footer a:hover {
       color: #FF7E26; }
+
+.push {
+  height: 59px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
