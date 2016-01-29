@@ -94,12 +94,13 @@ a {
   right: 0;
   top: 12vh; }
   .slider img {
-    transition: display 0.4s;
-    display: none;
+    position: absolute;
+    transition: opacity 1.5s;
+    opacity: 0;
     max-width: 100%;
     margin: 0 auto; }
   .slider .display {
-    display: block; }
+    opacity: 1; }
 
 .info {
   margin: 0 auto; }
