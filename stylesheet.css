@@ -39,13 +39,13 @@ a {
 
 .banner {
   width: 100%;
-  height: 80%; }
+  height: 47vw; }
   .banner .bg {
     background-image: url(https://static.pexels.com/photos/6042/nature-grain-moving-cereal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80%;
+    height: 47vw;
     width: 100%;
     position: absolute;
     filter: blur(5px);
@@ -59,24 +59,47 @@ a {
       width: 100%;
       content: " ";
       background-color: rgba(0, 0, 0, 0.5); }
-  .banner img, .banner p {
+  .banner > img, .banner p {
     position: relative;
     z-index: 50;
-    text-align: center;
     color: #FF7E26;
     text-shadow: 1px 1px 10px #777; }
   .banner p {
-    font-size: 200%;
+    font-size: 120%;
     font-family: "Open Sans", sans-serif;
-    margin-top: 30px;
-    font-style: italic; }
-  .banner img {
-    padding-top: 30vh;
+    font-style: italic;
+    position: relative;
+    top: -30px;
+    left: 60px;
+    display: inline-block; }
+  .banner > img {
     font-size: 15vh;
-    margin: 0 auto;
     display: block;
     max-width: 100%;
-    width: 400px; }
+    width: 200px;
+    max-width: 40%; }
+
+@media(max-width: 700px) {
+  .banner {
+    height: 60vw; }
+    .banner .bg {
+      height: 60vw; } }
+.slider {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12vh; }
+  .slider img {
+    transition: display 0.4s;
+    display: none;
+    max-width: 100%;
+    margin: 0 auto; }
+  .slider .display {
+    display: block; }
 
 .info {
   margin: 0 auto; }

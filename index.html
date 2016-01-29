@@ -18,6 +18,12 @@
 				<div class="bg"></div>
 				<img src="tyto.png"></img>
 				<p>Agriculture solutions for a new age.</p>
+				<div class="slider">
+					<img id="img0" class="display" src="image1.jpg"/>
+					<img id="img1" src="image2.jpg"/>
+					<img id="img2" src="image3.jpg"/>
+					<img id="img3" src="image4.jpg"/>
+				</div>
 			</div>
 			<div class="subbanner">
 				<p>Real time information with a mobile interface</p>
@@ -66,5 +72,17 @@ Additional applications will help assess efficiency and value of the system, bus
 			<div class="push"></div>
 		</div>
 		<footer>Tyto Inc. 2015 - 60 Hazelwood Dr. Champaign, IL 61820 - <a href="mailto:tyto@tytoinc.com">tyto@tytoinc.com</a> - 217.493.1560</footer>
+
+
+		<script>
+			var curr = 0;
+			setInterval(function(){
+				var targetImg = document.getElementById("img"+curr);
+				var newImg = document.getElementById("img"+(curr+1)%4);
+				targetImg.className = '';
+				newImg.className = 'display';
+				curr = (curr+1)%4;
+			}, 3000);
+		</script>
 	</body>
 </html>
