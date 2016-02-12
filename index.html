@@ -77,13 +77,31 @@ Additional applications will help assess efficiency and value of the system, bus
 
 		<script>
 			var curr = 0;
-			setInterval(function(){
+			var timer = 6000;
+			function setTime(){
+				setTimeout(function(){
+					var targetImg = document.getElementById("img"+curr);
+					var newImg = document.getElementById("img"+(curr+1)%4);
+					targetImg.className = '';
+					newImg.className = 'display';
+					curr = (curr+1)%4;
+					if(curr == 0){
+						timer = 6000;
+					} else {
+						timer = 4000;
+					}
+					setTime();
+				}, timer);
+			};
+			setTime();
+
+			/*setInterval(function(){
 				var targetImg = document.getElementById("img"+curr);
 				var newImg = document.getElementById("img"+(curr+1)%4);
 				targetImg.className = '';
 				newImg.className = 'display';
 				curr = (curr+1)%4;
-			}, 4000);
+			}, 4000);*/
 		</script>
 	</body>
 </html>
